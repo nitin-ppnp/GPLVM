@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04E0E1B7-A673-4FB6-8916-43ACBA489B4D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ILNumerics">
+      <HintPath>..\packages\ILNumerics.3.3.3.0\lib\ILNumerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.C3DSERVERLib">
+      <HintPath>obj\Debug\Interop.C3DSERVERLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backconstraint\BackConstraintKBR.cs" />
+    <Compile Include="Backconstraint\BackConstraintMLP.cs" />
+    <Compile Include="Backconstraint\BackConstraintPTC.cs" />
+    <Compile Include="Backconstraint\BackConstraintPTChalf.cs" />
+    <Compile Include="Backconstraint\BackConstraintPTCLinear.cs" />
+    <Compile Include="Backconstraint\IBackconstraint.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DebugTools\FileLogger.cs" />
+    <Compile Include="Dynamics\GPAcceleration.cs" />
+    <Compile Include="Dynamics\GPAccelerationNode.cs" />
+    <Compile Include="Dynamics\GPTopology.cs" />
+    <Compile Include="Dynamics\GPVelocity.cs" />
+    <Compile Include="Dynamics\IDynamics.cs" />
+    <Compile Include="Embeddings\Embed.cs" />
+    <Compile Include="Embeddings\Isomap.cs" />
+    <Compile Include="Embeddings\KernelPCA.cs" />
+    <Compile Include="Embeddings\LLE.cs" />
+    <Compile Include="Embeddings\PCA.cs" />
+    <Compile Include="Embeddings\SmallRand.cs" />
+    <Compile Include="GPLVM\BackProjection.cs" />
+    <Compile Include="GPLVM\GP_LVM.cs" />
+    <Compile Include="GPLVM\IGPLVM.cs" />
+    <Compile Include="GPLVM\StyleGPLVM.cs" />
+    <Compile Include="GPLVM\StyleGPLVM2.cs" />
+    <Compile Include="Graph\Node.cs" />
+    <Compile Include="Graph\NodeList.cs" />
+    <Compile Include="Kernel\BiasKern.cs" />
+    <Compile Include="Kernel\CompoundKern.cs" />
+    <Compile Include="Kernel\DirectionKern.cs" />
+    <Compile Include="Kernel\IKernel.cs" />
+    <Compile Include="Kernel\LinearAccelerationKern.cs" />
+    <Compile Include="Kernel\LinearKern.cs" />
+    <Compile Include="Kernel\ModulationKern.cs" />
+    <Compile Include="Kernel\PGEKern.cs" />
+    <Compile Include="Kernel\RBFAccelerationKern.cs" />
+    <Compile Include="Kernel\RBFKern.cs" />
+    <Compile Include="Kernel\RBFKernBack.cs" />
+    <Compile Include="Kernel\StyleAccelerationKern.cs" />
+    <Compile Include="Kernel\StyleKern.cs" />
+    <Compile Include="Kernel\TensorKern.cs" />
+    <Compile Include="Kernel\WhiteKern.cs" />
+    <Compile Include="Numerical\Constraint\AugLagOptimizer.cs" />
+    <Compile Include="Numerical\Constraint\IFunctionWithGradientConstraint.cs" />
+    <Compile Include="Numerical\Constraint\IFunctionWithGradientConstraintOptimizer.cs" />
+    <Compile Include="Numerical\Constraint\INonlinearConstraint.cs" />
+    <Compile Include="Numerical\ExpressionParser.cs" />
+    <Compile Include="Numerical\LinearSystem.cs" />
+    <Compile Include="Numerical\NonlinearConstraintFunctionWithGradientTest.cs" />
+    <Compile Include="Numerical\Rosenbrock.cs" />
+    <Compile Include="Numerical\Unconstraint\BFGSOptimizer.cs" />
+    <Compile Include="Numerical\Unconstraint\CERCGMinimize.cs" />
+    <Compile Include="Numerical\Unconstraint\IFunctionWithGradient.cs" />
+    <Compile Include="Numerical\Unconstraint\IFunctionWithGradientOptimizer.cs" />
+    <Compile Include="Numerical\Unconstraint\LineSearchFailedExeption.cs" />
+    <Compile Include="Numerical\Unconstraint\OptimizationProgressEventHandler.cs" />
+    <Compile Include="Numerical\Unconstraint\SCGOptimizer.cs" />
+    <Compile Include="Optimisation\Constraint\AugLag.cs" />
+    <Compile Include="Optimisation\Constraint\SynthesisToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Optimisation\Unconstraint\BackProjectionToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Optimisation\Unconstraint\BFGS.cs" />
+    <Compile Include="Optimisation\Unconstraint\CERCG.cs" />
+    <Compile Include="Optimisation\Unconstraint\GPAccelerationToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Optimisation\Unconstraint\GPLVMToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Optimisation\Unconstraint\MLPToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Optimisation\Unconstraint\SCG.cs" />
+    <Compile Include="Optimisation\Unconstraint\StyleGPLVMToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Optimisation\Unconstraint\SynthesisTestIKToFunctionWithGradientAdapter.cs" />
+    <Compile Include="Prior\Compound.cs" />
+    <Compile Include="Prior\Connectivity.cs" />
+    <Compile Include="Prior\Gaussian.cs" />
+    <Compile Include="Prior\IPrior.cs" />
+    <Compile Include="Prior\LocallyLinear.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Styles\IStyle.cs" />
+    <Compile Include="Styles\Style.cs" />
+    <Compile Include="Styles\TopologicalPosition.cs" />
+    <Compile Include="Synthesis\Constraints\Constraint.cs" />
+    <Compile Include="Synthesis\Constraints\ConstraintFootSkate.cs" />
+    <Compile Include="Synthesis\Constraints\ConstraintIK.cs" />
+    <Compile Include="Synthesis\Constraints\ConstraintIKTest.cs" />
+    <Compile Include="Synthesis\Constraints\IConstraint.cs" />
+    <Compile Include="Synthesis\SynthesisOptimizer.cs" />
+    <Compile Include="Synthesis\SynthesisOptimizerTestIK.cs" />
+    <Compile Include="Utils\Character\AvatarBVH.cs" />
+    <Compile Include="Utils\Character\Joint.cs" />
+    <Compile Include="Utils\Character\Skeleton.cs" />
+    <Compile Include="Utils\Concatenate.cs" />
+    <Compile Include="Utils\DataFormats\BVH.cs" />
+    <Compile Include="Utils\DataFormats\DataPostProcess.cs" />
+    <Compile Include="Utils\DataFormats\DataProcess.cs" />
+    <Compile Include="Utils\DataFormats\DataStream.cs" />
+    <Compile Include="Utils\DataFormats\XMLReadWrite.cs" />
+    <Compile Include="Utils\Exeptions\DimensionMismatchException.cs" />
+    <Compile Include="Utils\IndexAccum.cs" />
+    <Compile Include="Utils\Math\atox.cs" />
+    <Compile Include="Utils\Math\CorrCoef.cs" />
+    <Compile Include="Utils\Math\EigDec.cs" />
+    <Compile Include="Utils\Math\Euclidean.cs" />
+    <Compile Include="Utils\Math\jitChol.cs" />
+    <Compile Include="Utils\Math\logdet.cs" />
+    <Compile Include="Utils\Math\pdinverse.cs" />
+    <Compile Include="Utils\Math\pinverse.cs" />
+    <Compile Include="Utils\Math\Rotation2D.cs" />
+    <Compile Include="Utils\Math\setdiff.cs" />
+    <Compile Include="Utils\Math\Sign.cs" />
+    <Compile Include="Utils\Math\SquareEuclidean.cs" />
+    <Compile Include="Utils\Math\union.cs" />
+    <Compile Include="Utils\NumElements.cs" />
+    <Compile Include="Utils\ResizeAdd.cs" />
+    <Compile Include="Utils\RotationUtil\AngleTransformation.cs" />
+    <Compile Include="Utils\RotationUtil\DualQuaternion.cs" />
+    <Compile Include="Utils\RotationUtil\Matrix3.cs" />
+    <Compile Include="Utils\RotationUtil\Matrix4.cs" />
+    <Compile Include="Utils\RotationUtil\Quaternion.cs" />
+    <Compile Include="Utils\RotationUtil\Radian.cs" />
+    <Compile Include="Utils\RotationUtil\RotationType.cs" />
+    <Compile Include="Utils\RotationUtil\Vector3.cs" />
+    <Compile Include="Utils\Velocity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin32\libiomp5md.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin32\mkl_custom.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin64\libiomp5md.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin64\mkl_custom.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpGPLVM\GPLVMModels\GPLVMModels.csproj">
+      <Project>{f6fccd62-b016-4e21-9da3-304a7a8b0e5c}</Project>
+      <Name>GPLVMModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

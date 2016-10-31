@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCCB17F9-815F-45C7-910B-DACDA4602D65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FactorGraph</RootNamespace>
+    <AssemblyName>FactorGraph</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin64\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin64\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataNodes\CompoundMatrixDataNode.cs" />
+    <Compile Include="Core\IMatrixDataNode.cs" />
+    <Compile Include="Core\INamedEntity.cs" />
+    <Compile Include="DataNodes\CompoundMatrixDataNodeWithSegments.cs" />
+    <Compile Include="DataNodes\DataNodeWithSegments.cs" />
+    <Compile Include="DataNodes\IDataNodeWithSegments.cs" />
+    <Compile Include="DataNodes\StyleDataNode.cs" />
+    <Compile Include="FactorNodes\AccelerationDynamicsNode.cs" />
+    <Compile Include="FactorNodes\Common\GPPredictionStruct.cs" />
+    <Compile Include="FactorNodes\PTCBackConstraintNode.cs" />
+    <Compile Include="FactorNodes\AbstractNodes\FactorNodeWithStyles.cs" />
+    <Compile Include="FactorNodes\GPRegressionNode.cs" />
+    <Compile Include="FactorNodes\KBRBackConstraintNode.cs" />
+    <Compile Include="FactorNodes\StyleAccelerationDynamicsNode.cs" />
+    <Compile Include="FactorNodes\StyleGPLVMNode.cs" />
+    <Compile Include="Core\GraphException.cs" />
+    <Compile Include="DataConnectors\LogDataConnector.cs" />
+    <Compile Include="Core\MatrixDataNode.cs" />
+    <Compile Include="FactorNodes\AbstractNodes\FactorNodeWithKernel.cs" />
+    <Compile Include="FactorNodes\GPLVMNode.cs" />
+    <Compile Include="Core\DataConnector.cs" />
+    <Compile Include="Core\DataFormat.cs" />
+    <Compile Include="Core\FactorNode.cs" />
+    <Compile Include="Core\Graph.cs" />
+    <Compile Include="Core\NamedEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Serializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GPLVM\GPLVM.csproj">
+      <Project>{ecd71ce3-4dc7-4855-b316-c0d0117c3f0a}</Project>
+      <Name>GPLVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ILNumerics_CommunityEdition_v3.2.2.0\ILNumerics_nosign.csproj">
+      <Project>{93b4a10e-8979-4028-8ccf-49d88d6fac0c}</Project>
+      <Name>ILNumerics_nosign</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

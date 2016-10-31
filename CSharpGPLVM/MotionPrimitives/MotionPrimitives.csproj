@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CFD3FFD-9B58-4471-9D1C-C0A929EAA737}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MotionPrimitives</RootNamespace>
+    <AssemblyName>MotionPrimitives</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin64\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin64\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataFormats\CharacterJoint.cs" />
+    <Compile Include="DataFormats\CharacterSkeleton.cs" />
+    <Compile Include="DataSets\DataSet.cs" />
+    <Compile Include="Experiments\Experiment.cs" />
+    <Compile Include="Experiments\LearnCircularDynamicsExperiment.cs" />
+    <Compile Include="Experiments\LearnCoupledDynamicsExperiment.cs" />
+    <Compile Include="Experiments\LearnGPDMExperiment.cs" />
+    <Compile Include="Experiments\LearnStyledCoupledDynamicsExperiment.cs" />
+    <Compile Include="MotionData.cs" />
+    <Compile Include="MotionStream\ExperimentGenerator.cs" />
+    <Compile Include="MotionStream\MatrixGenerator.cs" />
+    <Compile Include="MotionStream\Generator.cs" />
+    <Compile Include="MotionStream\Player.cs" />
+    <Compile Include="MotionStream\RelativeRootGenerator.cs" />
+    <Compile Include="MotionStream\Visualizer.cs" />
+    <Compile Include="MotionStream\OgreVisualizer.cs" />
+    <Compile Include="Numerical\Regression.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataFormats\BVHDataFormat.cs" />
+    <Compile Include="SkeletonMap\PredefinedMaps.cs" />
+    <Compile Include="SkeletonMap\SkeletonMap.cs" />
+    <Compile Include="SkeletonMap\JointsGroup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FactorGraph\FactorGraph.csproj">
+      <Project>{dccb17f9-815f-45c7-910b-dacda4602d65}</Project>
+      <Name>FactorGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GPLVM\GPLVM.csproj">
+      <Project>{ecd71ce3-4dc7-4855-b316-c0d0117c3f0a}</Project>
+      <Name>GPLVM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ILNumerics_CommunityEdition_v3.2.2.0\ILNumerics_nosign.csproj">
+      <Project>{93b4a10e-8979-4028-8ccf-49d88d6fac0c}</Project>
+      <Name>ILNumerics_nosign</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

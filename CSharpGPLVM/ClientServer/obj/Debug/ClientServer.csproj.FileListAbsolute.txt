@@ -1,0 +1,26 @@
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\bin32\libiomp5md.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\bin32\mkl_custom.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\bin64\libiomp5md.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\bin64\mkl_custom.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\ClientServer.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\ClientServer.pdb
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\GPLVM.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\ILNumerics.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\GPLVM.pdb
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\bin\Debug\ILNumerics.xml
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\obj\Debug\ClientServer.csprojResolveAssemblyReference.cache
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\obj\Debug\ClientServer.dll
+C:\Users\Nitin Saini\Documents\GitHub\hierarchicalGPDM\CSharpGPLVM\ClientServer\obj\Debug\ClientServer.pdb
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\bin32\libiomp5md.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\bin32\mkl_custom.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\bin64\libiomp5md.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\bin64\mkl_custom.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\ClientServer.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\ClientServer.pdb
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\GPLVM.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\ILNumerics.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\GPLVM.pdb
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\bin\Debug\ILNumerics.xml
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\obj\Debug\ClientServer.csprojResolveAssemblyReference.cache
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\obj\Debug\ClientServer.dll
+C:\Users\Nitin Saini\Documents\Visual Studio 2015\Projects\ConsoleApplication1\CSharpGPLVM\ClientServer\obj\Debug\ClientServer.pdb

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{04E0E1B7-A673-4FB6-8916-43ACBA489B4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPLVM", "CSharpGPLVM\GPLVM\GPLVM.csproj", "{0B661956-5A9C-4B0A-9825-81D29D4D109E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPDMNetworkStream", "CSharpGPLVM\GPDMNetworkStream\GPDMNetworkStream.csproj", "{4C0218E7-40F7-487C-AF24-FB46C5B69888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientServer", "CSharpGPLVM\ClientServer\ClientServer.csproj", "{4A4C2050-5D06-4A52-881B-F5FDCB61FAD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPLVMTest", "CSharpGPLVM\GPLVMTest\GPLVMTest.csproj", "{1A752F9C-42AC-4B9A-88A5-26CF99A472FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPLVMModels", "CSharpGPLVM\GPLVMModels\GPLVMModels.csproj", "{F6FCCD62-B016-4E21-9DA3-304A7A8B0E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04E0E1B7-A673-4FB6-8916-43ACBA489B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E0E1B7-A673-4FB6-8916-43ACBA489B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E0E1B7-A673-4FB6-8916-43ACBA489B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E0E1B7-A673-4FB6-8916-43ACBA489B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B661956-5A9C-4B0A-9825-81D29D4D109E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B661956-5A9C-4B0A-9825-81D29D4D109E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B661956-5A9C-4B0A-9825-81D29D4D109E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B661956-5A9C-4B0A-9825-81D29D4D109E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0218E7-40F7-487C-AF24-FB46C5B69888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0218E7-40F7-487C-AF24-FB46C5B69888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0218E7-40F7-487C-AF24-FB46C5B69888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0218E7-40F7-487C-AF24-FB46C5B69888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4C2050-5D06-4A52-881B-F5FDCB61FAD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4C2050-5D06-4A52-881B-F5FDCB61FAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4C2050-5D06-4A52-881B-F5FDCB61FAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4C2050-5D06-4A52-881B-F5FDCB61FAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A752F9C-42AC-4B9A-88A5-26CF99A472FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A752F9C-42AC-4B9A-88A5-26CF99A472FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A752F9C-42AC-4B9A-88A5-26CF99A472FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A752F9C-42AC-4B9A-88A5-26CF99A472FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FCCD62-B016-4E21-9DA3-304A7A8B0E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FCCD62-B016-4E21-9DA3-304A7A8B0E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FCCD62-B016-4E21-9DA3-304A7A8B0E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FCCD62-B016-4E21-9DA3-304A7A8B0E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
